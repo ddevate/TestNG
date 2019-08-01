@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20786" started-at="2019-07-31T18:14:37Z" finished-at="2019-07-31T18:14:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="20786" started-at="2019-07-31T18:14:37Z" finished-at="2019-07-31T18:14:58Z">
+      <class name="selenium.test.Test1">
+        <test-method status="PASS" signature="browserCommands()[pri:0, instance:selenium.test.Test1@68c4039c]" name="browserCommands" duration-ms="18267" started-at="2019-07-31T18:14:37Z" finished-at="2019-07-31T18:14:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCommands -->
+      </class> <!-- selenium.test.Test1 -->
+      <class name="selenium.test.Test2">
+        <test-method status="PASS" signature="commonWebElementCommands()[pri:0, instance:selenium.test.Test2@ae45eb6]" name="commonWebElementCommands" duration-ms="1127" started-at="2019-07-31T18:14:55Z" finished-at="2019-07-31T18:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commonWebElementCommands -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:selenium.test.Test2@ae45eb6]" name="afterSuite" is-config="true" duration-ms="1252" started-at="2019-07-31T18:14:58Z" finished-at="2019-07-31T18:14:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- selenium.test.Test2 -->
+      <class name="selenium.test.Test3">
+        <test-method status="PASS" signature="selectOperations()[pri:0, instance:selenium.test.Test3@59f99ea]" name="selectOperations" duration-ms="1334" started-at="2019-07-31T18:14:56Z" finished-at="2019-07-31T18:14:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOperations -->
+      </class> <!-- selenium.test.Test3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

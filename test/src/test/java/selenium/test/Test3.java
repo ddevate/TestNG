@@ -1,0 +1,49 @@
+package selenium.test;
+
+import static page.objects.DropdownPage.dropDownList;
+import static page.objects.HomePage.dropDownLink;
+import static selenium.test.Test1.driver;
+
+import java.time.Duration;
+import java.util.NoSuchElementException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.testng.annotations.Test;
+
+public class Test3 {
+	@Test
+	public static void selectOperations() throws InterruptedException {
+
+		// Navigate Back On Browser
+		driver.navigate().back();
+
+		// Initialize Fluent Wait
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(100))
+				.pollingEvery(Duration.ofMillis(600)).ignoring(NoSuchElementException.class);
+
+		// Wait For Element
+		wait.until(ExpectedConditions.elementToBeClickable(dropDownLink()));
+
+		// Click Drop-down Page Link
+		dropDownLink().click();
+
+		// Create Object Of Select Class
+		Select selectObj = new Select(dropDownList());
+
+		// Select Drop-down Value By Text
+		selectObj.selectByVisibleText("Option 2");
+
+		// Select Drop-down Value By Index
+		selectObj.selectByIndex(1);
+
+		// Print All Options
+		for (WebElement dropDownItem : selectObj.getOptions()) {
+			System.out.println(dropDownItem.getText());
+		}
+	}
+}
