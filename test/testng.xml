@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="selenium.test.Test1"/>
-      <class name="selenium.test.Test2"/>
-      <class name="selenium.test.Test3"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+	</groups>
+		<classes>
+			<class name="selenium.test.Test1" />
+			<class name="selenium.test.Test2" />
+			<class name="selenium.test.Test3" />
+			<class name="selenium.test.Test4" />
+			<class name="selenium.test.Test5" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

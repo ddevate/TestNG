@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Test1 {
-	
+
 	public static WebDriver driver;
-	
-	@Test
+
+	@Test(priority = 0)
 	public static void browserCommands() throws InterruptedException {
 
 		WebDriverManager.chromedriver().setup();
@@ -21,22 +21,22 @@ public class Test1 {
 
 		// Launch URL
 		driver.get("http://the-internet.herokuapp.com");
-		
+
 		// Maximize Window
 		driver.manage().window().maximize();
-		
-		//Implicit Wait
+
+		// Implicit Wait
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		// Print Page Source Length
 		System.out.println("Page Source: " + driver.getPageSource().length());
-		
+
 		// Print Page Title
 		System.out.println("Page Title: " + driver.getTitle());
-		
+
 		// Print Page URL
 		System.out.println("Page URL: " + driver.getCurrentUrl());
-		
+
 		// Refresh Browser
 		driver.navigate().refresh();
 

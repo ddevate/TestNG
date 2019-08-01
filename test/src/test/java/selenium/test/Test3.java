@@ -16,7 +16,8 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 
 public class Test3 {
-	@Test
+
+	@Test(priority = 2)
 	public static void selectOperations() throws InterruptedException {
 
 		// Navigate Back On Browser
