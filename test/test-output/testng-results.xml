@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14198" started-at="2019-08-01T16:51:23Z" finished-at="2019-08-01T16:51:37Z">
+  <suite name="Suite" duration-ms="26541" started-at="2019-08-02T07:13:49Z" finished-at="2019-08-02T07:14:16Z">
     <groups>
-      <group name="Smoke">
-        <method signature="Test1.browserCommands()[pri:0, instance:selenium.test.Test1@604ed9f0]" name="browserCommands" class="selenium.test.Test1"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="14198" started-at="2019-08-01T16:51:23Z" finished-at="2019-08-01T16:51:37Z">
+    <test name="Test" duration-ms="26541" started-at="2019-08-02T07:13:49Z" finished-at="2019-08-02T07:14:16Z">
       <class name="selenium.test.Test1">
-        <test-method status="PASS" signature="browserCommands()[pri:0, instance:selenium.test.Test1@604ed9f0]" name="browserCommands" duration-ms="14134" started-at="2019-08-01T16:51:23Z" finished-at="2019-08-01T16:51:37Z">
+        <test-method status="PASS" signature="browserCommands()[pri:0, instance:selenium.test.Test1@5622fdf]" name="browserCommands" duration-ms="18635" started-at="2019-08-02T07:13:49Z" finished-at="2019-08-02T07:14:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserCommands -->
       </class> <!-- selenium.test.Test1 -->
+      <class name="selenium.test.Test4">
+        <test-method status="PASS" signature="excelOperations()[pri:3, instance:selenium.test.Test4@39c0f4a]" name="excelOperations" duration-ms="3427" started-at="2019-08-02T07:14:11Z" finished-at="2019-08-02T07:14:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excelOperations -->
+        <test-method status="PASS" signature="testNGAsserts()[pri:4, instance:selenium.test.Test4@39c0f4a]" name="testNGAsserts" duration-ms="79" started-at="2019-08-02T07:14:14Z" finished-at="2019-08-02T07:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- selenium.test.Test4 -->
+      <class name="selenium.test.Test5">
+        <test-method status="PASS" signature="windowSwitchOperations()[pri:5, instance:selenium.test.Test5@1794d431]" name="windowSwitchOperations" duration-ms="1242" started-at="2019-08-02T07:14:15Z" finished-at="2019-08-02T07:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowSwitchOperations -->
+      </class> <!-- selenium.test.Test5 -->
+      <class name="selenium.test.Test2">
+        <test-method status="PASS" signature="commonWebElementCommands()[pri:1, instance:selenium.test.Test2@4883b407]" name="commonWebElementCommands" duration-ms="2128" started-at="2019-08-02T07:14:08Z" finished-at="2019-08-02T07:14:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commonWebElementCommands -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:selenium.test.Test2@4883b407]" name="afterSuite" is-config="true" duration-ms="1507" started-at="2019-08-02T07:14:16Z" finished-at="2019-08-02T07:14:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- selenium.test.Test2 -->
+      <class name="selenium.test.Test3">
+        <test-method status="PASS" signature="selectOperations()[pri:2, instance:selenium.test.Test3@7d9d1a19]" name="selectOperations" duration-ms="965" started-at="2019-08-02T07:14:10Z" finished-at="2019-08-02T07:14:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOperations -->
+      </class> <!-- selenium.test.Test3 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

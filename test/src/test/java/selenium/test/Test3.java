@@ -6,6 +6,7 @@ import static selenium.test.Test1.driver;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,9 +25,9 @@ public class Test3 {
 		driver.navigate().back();
 
 		// Initialize Fluent Wait
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(100))
-				.pollingEvery(Duration.ofMillis(600)).ignoring(NoSuchElementException.class);
-
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(60, TimeUnit.SECONDS)
+				.pollingEvery(600, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
+		
 		// Wait For Element
 		wait.until(ExpectedConditions.elementToBeClickable(dropDownLink()));
 
