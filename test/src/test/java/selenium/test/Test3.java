@@ -4,7 +4,6 @@ import static page.objects.DropdownPage.dropDownList;
 import static page.objects.HomePage.dropDownLink;
 import static selenium.test.Test1.driver;
 
-import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -27,7 +26,7 @@ public class Test3 {
 		// Initialize Fluent Wait
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(60, TimeUnit.SECONDS)
 				.pollingEvery(600, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
-		
+
 		// Wait For Element
 		wait.until(ExpectedConditions.elementToBeClickable(dropDownLink()));
 

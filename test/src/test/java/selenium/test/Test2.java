@@ -15,9 +15,6 @@ public class Test2 {
 	@Test(priority = 1)
 	public static void commonWebElementCommands() throws InterruptedException {
 
-		// Launch URL
-		driver.get("http://the-internet.herokuapp.com");
-
 		// Explicit Wait
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.elementToBeClickable(inputsLink()));

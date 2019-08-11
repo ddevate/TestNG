@@ -3,31 +3,9 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="selenium.test.Test3">
-        <methods>
-          <include name="selectOperations"/>
-        </methods>
-      </class> <!-- selenium.test.Test3 -->
-      <class name="selenium.test.Test2">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="commonWebElementCommands"/>
-        </methods>
-      </class> <!-- selenium.test.Test2 -->
-      <class name="selenium.test.Test1">
-        <methods>
-          <include name="browserCommands"/>
-        </methods>
-      </class> <!-- selenium.test.Test1 -->
-      <class name="selenium.test.Test5">
-        <methods>
-          <include name="windowSwitchOperations"/>
-        </methods>
-      </class> <!-- selenium.test.Test5 -->
       <class name="selenium.test.Test4">
         <methods>
           <include name="testNGAsserts"/>
-          <include name="excelOperations"/>
         </methods>
       </class> <!-- selenium.test.Test4 -->
     </classes>

@@ -1,1 +1,2 @@
-./test/test-output/*.*
+./test/test-output/
+./test/target/

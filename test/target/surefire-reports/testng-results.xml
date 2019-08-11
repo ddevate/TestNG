@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="21631" started-at="2019-08-11T11:32:36Z" finished-at="2019-08-11T11:32:58Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="Test1.browserCommands()[pri:0, instance:selenium.test.Test1@327471b5]" name="browserCommands" class="selenium.test.Test1"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Command line test" duration-ms="21631" started-at="2019-08-11T11:32:36Z" finished-at="2019-08-11T11:32:58Z">
+      <class name="selenium.test.Test1">
+        <test-method status="PASS" signature="browserCommands()[pri:0, instance:selenium.test.Test1@327471b5]" name="browserCommands" duration-ms="15440" started-at="2019-08-11T11:32:36Z" finished-at="2019-08-11T11:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserCommands -->
+      </class> <!-- selenium.test.Test1 -->
+      <class name="selenium.test.Test4">
+        <test-method status="PASS" signature="excelOperations()[pri:3, instance:selenium.test.Test4@47f6473]" name="excelOperations" duration-ms="3063" started-at="2019-08-11T11:32:53Z" finished-at="2019-08-11T11:32:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excelOperations -->
+        <test-method status="PASS" signature="testNGAsserts()[pri:4, instance:selenium.test.Test4@47f6473]" name="testNGAsserts" duration-ms="50" started-at="2019-08-11T11:32:56Z" finished-at="2019-08-11T11:32:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- selenium.test.Test4 -->
+      <class name="selenium.test.Test5">
+        <test-method status="PASS" signature="windowSwitchOperations()[pri:5, instance:selenium.test.Test5@15975490]" name="windowSwitchOperations" duration-ms="1561" started-at="2019-08-11T11:32:56Z" finished-at="2019-08-11T11:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowSwitchOperations -->
+      </class> <!-- selenium.test.Test5 -->
+      <class name="selenium.test.Test2">
+        <test-method status="PASS" signature="commonWebElementCommands()[pri:1, instance:selenium.test.Test2@4157f54e]" name="commonWebElementCommands" duration-ms="733" started-at="2019-08-11T11:32:52Z" finished-at="2019-08-11T11:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commonWebElementCommands -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:selenium.test.Test2@4157f54e]" name="afterSuite" is-config="true" duration-ms="1133" started-at="2019-08-11T11:32:58Z" finished-at="2019-08-11T11:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- selenium.test.Test2 -->
+      <class name="selenium.test.Test3">
+        <test-method status="PASS" signature="selectOperations()[pri:2, instance:selenium.test.Test3@90f6bfd]" name="selectOperations" duration-ms="754" started-at="2019-08-11T11:32:53Z" finished-at="2019-08-11T11:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOperations -->
+      </class> <!-- selenium.test.Test3 -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

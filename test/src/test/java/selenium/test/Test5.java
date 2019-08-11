@@ -1,25 +1,29 @@
 package selenium.test;
 
 import static page.objects.HomePage.multipleWindowsLink;
-import static page.objects.WindowsPage.clickHereLink;
-import static page.objects.WindowsPage.newWindowText;
 import static selenium.test.Test1.driver;
 
 import java.io.IOException;
 
 import org.testng.annotations.Test;
 
+import page.objects.WindowsPage;
+
 public class Test5 {
 
+	WindowsPage windowsPage;
+
 	@Test(priority = 5)
-	public static void windowSwitchOperations() throws InterruptedException, IOException {
+	public void windowSwitchOperations() throws InterruptedException, IOException {
+
+		windowsPage = new WindowsPage(driver);
 
 		// Load Home Page URL
 		driver.get("http://the-internet.herokuapp.com");
 
 		// Open New Window Page
 		multipleWindowsLink().click();
-		clickHereLink().click();
+		windowsPage.clickHereLink.click();
 
 		// Save Current Window Handle
 		String firstWinHandle = driver.getWindowHandle();
@@ -28,7 +32,7 @@ public class Test5 {
 		for (String handle : driver.getWindowHandles()) {
 			if (!handle.equals(firstWinHandle)) {
 				driver.switchTo().window(handle);
-				System.out.println("Text Present In New Window: " + newWindowText().getText());
+				System.out.println("Text Present In New Window: " + windowsPage.newWindowText.getText());
 
 				// Close Current Window
 				driver.close();
