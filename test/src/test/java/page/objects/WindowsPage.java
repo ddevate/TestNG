@@ -15,7 +15,7 @@ public class WindowsPage {
 
 	public WindowsPage(WebDriver driver) {
 
-		// This initElements method will create all WebElements
+		// This initElements constructor will create all WebElements
 		PageFactory.initElements(driver, this);
 	}
 
